@@ -61,7 +61,7 @@ import ThemeController from "../../settings/controllers/ThemeController";
 import { startAnyRegistrationFlow } from "../../Registration";
 import { messageForSyncError } from '../../utils/ErrorUtils';
 import ResizeNotifier from "../../utils/ResizeNotifier";
-import AutoDiscoveryUtils, { ValidatedServerConfig } from "../../utils/AutoDiscoveryUtils";
+import AutoDiscoveryUtils from "../../utils/AutoDiscoveryUtils";
 import DMRoomMap from '../../utils/DMRoomMap';
 import ThemeWatcher from "../../settings/watchers/ThemeWatcher";
 import { FontWatcher } from '../../settings/watchers/FontWatcher';
@@ -132,6 +132,7 @@ import { IRoomStateEventsActionPayload } from "../../actions/MatrixActionCreator
 import { UseCaseSelection } from '../views/elements/UseCaseSelection';
 import { Filter, openSpotlight } from '../views/dialogs/spotlight/SpotlightDialog';
 import { OpenSpotlightPayload } from '../../dispatcher/payloads/OpenSpotlightPayload';
+import { ValidatedServerConfig } from '../../utils/ValidatedServerConfig';
 
 // legacy export
 export { default as Views } from "../../Views";
