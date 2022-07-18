@@ -30,6 +30,8 @@ export async function join(session: ElementSession, roomName: string): Promise<v
         '.mx_SpotlightDialog_content .mx_SpotlightDialog_option .mx_AccessibleButton',
     );
     await joinFirstLink.click();
+    const joinRoomButton = await session.query(".mx_RoomPreviewBar_actions .mx_AccessibleButton");
+    await joinRoomButton.click();
     await session.query('.mx_MessageComposer');
     await measureStop(session, "mx_JoinRoom");
     session.log.done();
