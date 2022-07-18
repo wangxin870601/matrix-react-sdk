@@ -1,6 +1,6 @@
 /*
 Copyright 2018 New Vector Ltd
-Copyright 2019 The Matrix.org Foundation C.I.C.
+Copyright 2019, 2022 The Matrix.org Foundation C.I.C.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ import * as puppeteer from "puppeteer";
 import { measureStart, measureStop } from '../util';
 import { ElementSession } from "../session";
 
-export async function openRoomDirectory(session: ElementSession): Promise<void> {
+export async function openSpotlight(session: ElementSession): Promise<void> {
     const roomDirectoryButton = await session.query('.mx_LeftPanel_exploreButton');
     await roomDirectoryButton.click();
 }
